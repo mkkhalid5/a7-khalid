@@ -27,7 +27,9 @@ const TimeLine = () => {
                     <option value="video">Video</option>
                 </select>
             </div>
-            <div className='space-y-3'>
+            {
+                friendContact.length === 0 ? <div className='text-center'>No data found!</div> :
+                <div className='space-y-3'>
                 {
                     filteredContact.map((data, ind) => (
                         <div key={ind} className='p-4 flex items-center gap-3 bg-white rounded-md shadow'>
@@ -60,6 +62,7 @@ const TimeLine = () => {
                     ))
                 }
             </div>
+            }
         </div>
     );
 };

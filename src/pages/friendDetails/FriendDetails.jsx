@@ -7,14 +7,16 @@ import { MdDelete } from 'react-icons/md';
 import { FaArchive } from 'react-icons/fa';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
 import { FriendContext } from '../../context/FriendContext';
+import Spinner from '../../components/shared/loadingSpinner/Spinner';
 
 
 const FriendDetails = () => {
     const { id } = useParams();
-    const friends = useLoaderData();
-    const expectedFriend = friends.find((friend) => friend.id === Number(id));
+    const friendsData = useLoaderData();
+    const expectedFriend = friendsData.find((friend) => friend.id === Number(id));
 
     const {handleFriendContact} = useContext(FriendContext);
+
 
     const {
         name,

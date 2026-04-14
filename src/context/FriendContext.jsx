@@ -15,7 +15,11 @@ const FriendProvider = ({children}) => {
 
         setFriendContact((prev) => [...prev, newContact]);
 
-        toast.success(`${actionType} with ${friend.name}`);
+        toast.success(`${actionType} with ${friend.name}`,{
+            position: 'top-center',
+            closeButton: false,
+            hideProgressBar: true,
+        });
     };
 
     const data = {
