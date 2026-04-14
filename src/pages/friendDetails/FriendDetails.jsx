@@ -15,9 +15,6 @@ const FriendDetails = () => {
     const friendsData = useLoaderData();
     const expectedFriend = friendsData.find((friend) => friend.id === Number(id));
 
-    const {handleFriendContact} = useContext(FriendContext);
-
-
     const {
         name,
         picture,
@@ -29,6 +26,11 @@ const FriendDetails = () => {
         goal,
         next_due_date
     } = expectedFriend;
+
+    const {handleFriendContact} = useContext(FriendContext);
+    console.log("friendata", friendsData);
+    console.log("expected", expectedFriend);
+    console.log("handle", handleFriendContact);
 
     return (
         <div className='flex flex-col lg:flex-row container mx-auto text-center py-20 px-3 gap-4'>

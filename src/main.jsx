@@ -11,7 +11,7 @@ import FriendProvider from './context/FriendContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <FriendProvider >
-      <RouterProvider router={router} />,
+      <RouterProvider router={router} />
       <ToastContainer />
     </FriendProvider>
   </StrictMode>,
