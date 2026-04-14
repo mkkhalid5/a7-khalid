@@ -94,5 +94,89 @@
     "bio": "Connected through an online design community. We share UI/UX ideas and feedback regularly.",
     "goal": 14,
     "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 9,
+    "name": "Shakil Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "shakil.ahmed@gmail.com",
+    "days_since_contact": 14,
+    "status": "almost due",
+    "tags": ["office", "team lead"],
+    "bio": "Worked together at my first job. He helped me improve my communication and leadership skills.",
+    "goal": 14,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 10,
+    "name": "Jannatul Ferdous",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "jannatul.ferdous@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["cousin", "family"],
+    "bio": "My cousin who lives in Dhaka. We talk frequently and share family updates.",
+    "goal": 14,
+    "next_due_date": "2025-07-30"
+  },
+  {
+    "id": 11,
+    "name": "Mahmudul Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/60.jpg",
+    "email": "mahmudul.hasan@gmail.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["school", "football"],
+    "bio": "We played football together during school days. Haven’t caught up in a while.",
+    "goal": 14,
+    "next_due_date": "2025-07-05"
+  },
+  {
+    "id": 12,
+    "name": "Tanjina Akter",
+    "picture": "https://randomuser.me/api/portraits/women/52.jpg",
+    "email": "tanjina.akter@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["design", "freelancer"],
+    "bio": "Freelance designer friend. We exchange ideas about UI/UX and client projects.",
+    "goal": 14,
+    "next_due_date": "2025-07-19"
+  },
+  {
+    "id": 13,
+    "name": "Rashed Karim",
+    "picture": "https://randomuser.me/api/portraits/men/27.jpg",
+    "email": "rashed.karim@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["travel", "adventure"],
+    "bio": "Travel buddy. We explored several places in Bangladesh together and plan more trips.",
+    "goal": 14,
+    "next_due_date": "2025-07-24"
+  },
+  {
+    "id": 14,
+    "name": "Samira Noor",
+    "picture": "https://randomuser.me/api/portraits/women/77.jpg",
+    "email": "samira.noor@gmail.com",
+    "days_since_contact": 17,
+    "status": "overdue",
+    "tags": ["university", "group mate"],
+    "bio": "University group project partner. We used to work late nights before deadlines.",
+    "goal": 14,
+    "next_due_date": "2025-07-11"
+  },
+  {
+    "id": 15,
+    "name": "Nayeem Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/83.jpg",
+    "email": "nayeem.rahman@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met through online gaming. We still play together and chat regularly.",
+    "goal": 14,
+    "next_due_date": "2025-07-27"
   }
 ]

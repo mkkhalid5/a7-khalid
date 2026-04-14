@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const FriendCard = ({friend}) => {
+const FriendCard = ({friend},ind) => {
     return (
-        <Link to={`/friendDetails/${friend.id}`} className='p-6 bg-white rounded-lg space-y-3 shadow-md'>
+        <Link key={ind} to={`/friendDetails/${friend.id}`} className='p-6 bg-white rounded-lg space-y-3 shadow-md'>
                             <div className='flex justify-center'>
                                 <img src={friend.picture} alt={friend.name} className='h-20 w-20 rounded-full' />
                             </div>

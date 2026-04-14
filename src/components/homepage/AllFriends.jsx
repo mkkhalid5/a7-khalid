@@ -10,7 +10,6 @@ const dataPromise = loadData();
 
 const AllFriends = () => {
     const friends = use(dataPromise);
-    console.log("friends", friends);
 
     return (
         <div className='bg-[#F8FAFC] px-3 pb-20'>
@@ -18,9 +17,9 @@ const AllFriends = () => {
                 <h2 className='font-bold text-2xl'>Your Friends</h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-4'>
                     {
-                        friends.map((friend) => {
+                        friends.map((friend,ind) => {
                             return (
-                                <FriendCard friend={friend} />
+                                <FriendCard key={ind} friend={friend} />
                             )
                         })
                     }

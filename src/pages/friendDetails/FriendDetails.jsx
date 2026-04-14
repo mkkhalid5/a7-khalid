@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import call from '../../assets/call.png';
 import text from '../../assets/text.png';
@@ -6,12 +6,15 @@ import video from '../../assets/video.png';
 import { MdDelete } from 'react-icons/md';
 import { FaArchive } from 'react-icons/fa';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
+import { FriendContext } from '../../context/FriendContext';
 
 
 const FriendDetails = () => {
     const { id } = useParams();
     const friends = useLoaderData();
     const expectedFriend = friends.find((friend) => friend.id === Number(id));
+
+    const {handleFriendContact} = useContext(FriendContext);
 
     const {
         name,
@@ -63,7 +66,7 @@ const FriendDetails = () => {
                         <p className='text-[#64748B]'>Goal(Days)</p>
                     </div>
                     <div className='px-4 py-8 bg-white rounded-md shadow'>
-                        <h2 className='text-[#244D3F] text-[30px] font-bold'>{next_due_date}</h2>
+                        <h2 className='text-[#244D3F] text-[30px] font-bold'>{new Date(next_due_date).toDateString()}</h2>
                         <p className='text-[#64748B]'>Next Due</p>
                     </div>
                 </div>
@@ -79,15 +82,15 @@ const FriendDetails = () => {
                 <div className='text-left p-6 space-y-4 bg-white rounded-md shadow'>
                     <h2 className='text-[#244D3F]  font-bold'>Quick Check-In</h2>
                     <div className='grid grid-cols-3 gap-3'>
-                        <div className='py-4 bg-[#E9E9E9]  rounded-md border border-gray-300 flex flex-col text-center items-center justify-center '>
+                        <div onClick={() => handleFriendContact(expectedFriend, "call")} className='py-4 bg-[#E9E9E9]  rounded-md border border-gray-300 flex flex-col text-center items-center justify-center '>
                             <img src={call} alt="" />
                             <p className='font-bold'>Call</p>
                         </div>
-                        <div className='py-4 bg-[#E9E9E9] rounded-md border border-gray-300 flex flex-col text-center items-center justify-center '>
+                        <div onClick={() => handleFriendContact(expectedFriend, "text")} className='py-4 bg-[#E9E9E9] rounded-md border border-gray-300 flex flex-col text-center items-center justify-center '>
                             <img src={text} alt="" />
                             <p className='font-bold'>Text</p>
                         </div>
-                        <div className='py-4 bg-[#E9E9E9]  rounded-md border border-gray-300 flex flex-col text-center items-center justify-center '>
+                        <div onClick={() => handleFriendContact(expectedFriend, "video")} className='py-4 bg-[#E9E9E9]  rounded-md border border-gray-300 flex flex-col text-center items-center justify-center '>
                             <img src={video} alt="" />
                             <p className='font-bold'>Video</p>
                         </div>
