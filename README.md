@@ -20,13 +20,13 @@ Stats page visualizes interaction data using charts
 It is designed to be clean, responsive, and user-friendly.
 
 ### 🛠️ Technologies Used
-React.js – Frontend library
-React Router – Page navigation
-Context API – Global state management
-Recharts – Data visualization
-Tailwind CSS – Styling
-JavaScript (ES6+) – Core logic
-JSON – Friend data source
+   - React.js – Frontend library
+   - React Router – Page navigation
+   - Context API – Global state management
+   - Recharts – Data visualization
+   - Tailwind CSS – Styling
+   - JavaScript (ES6+) – Core logic
+   - JSON – Friend data source
 
 ### ✨ Features
 

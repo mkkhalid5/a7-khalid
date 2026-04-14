@@ -14,19 +14,19 @@ const Banner = () => {
                 <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container mx-auto'>
                     <div className='p-8 rounded-md shadow-md bg-white flex flex-col items-center'>
                         <h2 className='text-[#244D3F] font-bold'>10</h2>
-                        <p>Total Friends</p>
+                        <p className='text-[#64748B]'>Total Friends</p>
                     </div>
                     <div className='p-8 rounded-md shadow-md bg-white flex flex-col items-center'>
-                        <h2 className='text-[#244D3F] font-bold'>10</h2>
-                        <p>Total Friends</p>
+                        <h2 className='text-[#244D3F] font-bold'>3</h2>
+                        <p className='text-[#64748B]'>On Track</p>
                     </div>
                     <div className='p-8 rounded-md shadow-md bg-white flex flex-col items-center'>
-                        <h2 className='text-[#244D3F] font-bold'>10</h2>
-                        <p>Total Friends</p>
+                        <h2 className='text-[#244D3F] font-bold'>6</h2>
+                        <p className='text-[#64748B]'>Need Attention</p>
                     </div>
                     <div className='p-8 rounded-md shadow-md bg-white flex flex-col items-center'>
-                        <h2 className='text-[#244D3F] font-bold'>10</h2>
-                        <p>Total Friends</p>
+                        <h2 className='text-[#244D3F] font-bold'>12</h2>
+                        <p className='text-[#64748B]'>Intersctions This Month</p>
                     </div>
                 </div>
                 <hr className='container mx-auto text-gray-300' />
