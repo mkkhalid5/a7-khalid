@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FriendContext } from '../../context/FriendContext';
 import call from '../../assets/call.png';
 import text from '../../assets/text.png'
@@ -6,17 +6,30 @@ import video from '../../assets/video.png'
 
 
 const TimeLine = () => {
-    const { friendContact } = useContext(FriendContext);
+    const {friendContact} = useContext(FriendContext);
+    const [filterType, setFilterType] = useState("all");
 
-    console.log("friendContact",friendContact);
+    const filteredContact = React.useMemo(() => {
+        if (filterType === "all") return friendContact;
+        return friendContact.filter(
+            item => item.actionType === filterType
+        );
+    }, [friendContact, filterType]);
 
     return (
-        <div eclassNam='py-20 container mx-auto px-3 space-y-6'>
-            <h2 className='text-5xl font-bold'>Timeline</h2>
-
+        <div className='py-20 container mx-auto px-3 space-y-6'>
+            <h2 className='text-3xl md:text-5xl font-bold'>Timeline</h2>
+            <div class="mt-4 p-3">
+                <select class="select" value={filterType}
+                    onChange={(e) => setFilterType(e.target.value)}>
+                    <option value="all" disabled selected>Filter timeline</option>
+                    <option value="text">Text</option><option value="call">Call</option>
+                    <option value="video">Video</option>
+                </select>
+            </div>
             <div className='space-y-3'>
                 {
-                    friendContact.map((data, ind) => (
+                    filteredContact.map((data, ind) => (
                         <div key={ind} className='p-4 flex items-center gap-3 bg-white rounded-md shadow'>
 
                             <div>
@@ -35,7 +48,7 @@ const TimeLine = () => {
                                 <h2 className='text-[#244D3F] font-bold'>
                                     {data.actionType}
                                     <span className='text-[#64748B] font-normal'>
-                                      {" "}  with {data.friend.name}
+                                        {" "}  with {data.friend.name}
                                     </span>
                                 </h2>
 

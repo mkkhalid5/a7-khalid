@@ -4,7 +4,7 @@ const Stats = () => {
     
     return (
         <div className='py-20 container mx-auto px-3 space-y-6'>
-            <h2 className='text-5xl font-bold'>Friendship Analytics</h2>
+            <h2 className='text-3xl md:text-5xl font-bold'>Friendship Analytics</h2>
 
             <div className='p-8 space-y-6 bg-white rounded-md'>
                 <h2 className='text-[#244D3F]'>By Interaction Type</h2>

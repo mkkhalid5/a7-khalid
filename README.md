@@ -1,16 +1,52 @@
-# React + Vite
+### 🚀 Friend Interaction Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📌 Project Overview
 
-Currently, two official plugins are available:
+Friend Interaction Tracker is a modern React-based web application that allows users to explore friend profiles, interact with them, and track those interactions visually. The app provides smooth navigation, global state management, and interactive data visualization.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project demonstrates important frontend concepts like dynamic routing, state management using Context API, and data visualization with charts.
 
-## React Compiler
+### 📝 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project is a simple friend interaction tracking system where:
 
-## Expanding the ESLint configuration
+Friend data is displayed dynamically from JSON
+Users can view detailed information of each friend
+Users can interact with friends (Call, Video, Text)
+All interactions are stored globally using Context API
+Timeline page shows all interaction history
+Stats page visualizes interaction data using charts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+It is designed to be clean, responsive, and user-friendly.
+
+### 🛠️ Technologies Used
+React.js – Frontend library
+React Router – Page navigation
+Context API – Global state management
+Recharts – Data visualization
+Tailwind CSS – Styling
+JavaScript (ES6+) – Core logic
+JSON – Friend data source
+
+### ✨ Features
+
+### 📱 Friend Interaction System
+View all friends from Home page
+Click to see detailed friend information
+Perform actions: 📞 Call, 🎥 Video, 💬 Text
+
+### 🕒 Timeline Tracking
+Every interaction is saved
+Timeline page displays interaction history
+
+### 📊 Statistics Dashboard
+Visual representation using Recharts
+Shows how many times each interaction occurred
+Color-coded chart for better understanding
+
+### 🔄 Dynamic Routing
+Smooth navigation between Home, Timeline, and Stats
+Powered by React Router
+
+### 🌐 Live Site
+👉 Visit the Live Website: 🔗 https://kin-keeper.mkkhalid.top/
