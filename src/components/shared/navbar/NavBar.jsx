@@ -29,11 +29,12 @@ const NavBar = () => {
         </>
     )
     return (
-        <div className='shadow-sm'>
-            <div className='py-4 flex justify-between container mx-auto'>
+        <div className='border-b border-gray-300 px-3'>
+            <div className='flex justify-between container mx-auto'>
                 <div className='flex justify-center items-center'>
                     <img src={logo} alt="" />
                 </div>
+                
                 <div className='flex'>
                     <ul className="menu menu-horizontal px-1 space-x-2">
                         {links}
